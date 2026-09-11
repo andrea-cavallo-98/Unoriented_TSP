@@ -1,0 +1,12 @@
+# Reproduction environment for "Signless Topological Signal Processing".
+#
+# The published results were produced with Python 3.9.13 and the versions pinned
+# below. Nothing in the code uses a recent API, so newer releases should work; the
+# pins are what was actually run.
+
+numpy==1.24.4
+scipy==1.9.1
+pandas==2.3.3        # only for the fast integer reader in src/complex.py
+matplotlib==3.5.2    # figures only
+openpyxl==3.0.10     # reads the fp-landscape supplementary workbook
+certifi              # optional: used by scripts/00_download.py for TLS roots
